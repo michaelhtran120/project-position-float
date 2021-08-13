@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positioning and Floating Elements</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id='site-header'>
+      <div id="header-top">
+        <!-- Newsletter / Logo / Subscribe button -->
+        <div id='newsletter-container'>
+            <h3><a>NEWSLETTERS</a></h3>
+            <p>Sign up to read our regular email newsletters</p>
+        </div>
+        <img id='logo' src='images/logo.svg'/>
+        <a id='subscribe-btn'>SUBSCRIBE AND SAVE 69%</a>
+      </div>
+    </header>
+    <div id='nav-outer-wrapper'>
+        <div id="nav-wrapper">
+            <nav>
+              <!-- nav list -->
+              <ul id='main-nav'>
+                  <li>News</li>
+                  <li>Podcasts</li>
+                  <li>Video</li>
+                  <li>Technology</li>
+                  <li>Space</li>
+                  <li>Physics</li>
+                  <li>Health</li>
+                  <li>More <img><!--add icon--></li>
+                  <li class='secondary-nav'>Shop</li>
+                  <li class='secondary-nav'>Courses</li>
+                  <li class='secondary-nav'>Events</li>
+                  <li class='secondary-nav'>Tours</li>
+                  <li class='secondary-nav'>Jobs</li>
+              </ul>
+              <div id='nav-tools'>
+                  <!--nav tools-->
+                  <a id='signin-link'>
+                      <span id='signin-icon'>
+                          <svg viewBox="0 0 32 32" class="icon" width='16px' height='16px'>
+                                <g>
+                                    <path class="path1" d="M22.304 7.342c0 3.705-3.004 6.709-6.709 6.709s-6.709-3.004-6.709-6.709c0-3.705 3.004-6.709 6.709-6.709s6.709 3.004 6.709 6.709z"></path>
+                                    <path class="path2" d="M23.146 14.139c-1.928 1.883-4.568 3.044-7.479 3.044-0.003 0-0.006 0-0.009 0-0.002 0-0.005 0-0.007 0-2.861 0-5.457-1.129-7.369-2.965-3.093 2.214-5.094 5.787-5.117 9.829v8.231h25.316v-8.228c-0.065-4.107-2.146-7.715-5.294-9.885z"></path>
+                                </g>
+                          </svg>
+                      </span>
+                Sign In</a>
+                  <a id='search-btn'>
+                      <span id='search-icon'>
+                        <svg viewBox="0 0 32 32" class="icon" width='16px' height='16px'>
+                            <g>
+                                <path class="path1" d="M30.43 27.962l-8.392-8.386c1.609-2 2.582-4.571 2.582-7.369 0-6.519-5.285-11.804-11.804-11.804s-11.804 5.285-11.804 11.804c0 6.519 5.285 11.804 11.804 11.804 2.533 0 4.88-0.798 6.803-2.156l8.431 8.487c0.3 0.283 0.706 0.457 1.153 0.457 0.93 0 1.684-0.754 1.684-1.684 0-0.447-0.174-0.852-0.458-1.154zM4.43 12.228c0-4.645 3.766-8.411 8.411-8.411s8.411 3.766 8.411 8.411c0 4.643-3.762 8.408-8.405 8.411-4.647 0-8.414-3.765-8.418-8.411z"></path>
+                            </g>
+                        </svg>
+                      </span>Search</a>
+              </div>
+            </nav>
+          </div>
+    </div>
+    <section id='main-body'>
+        <article id='left-container'>
+            <header>
+              <!-- Title / Links / Tag / Date / Author-->
+              <h1 id='article-title'>Ancient lake in Mars's Gale crater may have actually been a small pond</h1>
+              <div id='article-social-links'>
+                  <a>
+                      <img src='/images/facebook-icon.svg'/>
+                  </a>
+                  <a>
+                      <img src='/images/twitter-icon.svg'/>
+                  </a>
+                  <a>
+                      <img src='/images/whats-app-icon.svg'/>
+                  </a>
+                  <a>
+                      <img src='/images/linkedin-icon.svg'/>
+                  </a>
+                  <a>
+                      <img src='/images/reddit-icon.svg'/>
+                  </a>
+                  <a class='social-links'>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" style="fill: rgb(255, 255, 255);" width='28px' height='28px' background-color='#999'>
+                        <g>
+                            <g fill-rule="evenodd"></g>
+                            <path d="M27 22.757c0 1.24-.988 2.243-2.19 2.243H7.19C5.98 25 5 23.994 5 22.757V13.67c0-.556.39-.773.855-.496l8.78 5.238c.782.467 1.95.467 2.73 0l8.78-5.238c.472-.28.855-.063.855.495v9.087z"></path><path d="M27 9.243C27 8.006 26.02 7 24.81 7H7.19C5.988 7 5 8.004 5 9.243v.465c0 .554.385 1.232.857 1.514l9.61 5.733c.267.16.8.16 1.067 0l9.61-5.733c.473-.283.856-.96.856-1.514v-.465z"></path>
+                        </g>
+                    </svg>
+                  </a>
+                  <a class='social-links'>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" style="fill: rgb(255, 255, 255);">
+                        <g>
+                            <path d="M24.67 10.62h-2.86V7.49H10.82v3.12H7.95c-.5 0-.9.4-.9.9v7.66h3.77v1.31L15 24.66h6.81v-5.44h3.77v-7.7c-.01-.5-.41-.9-.91-.9zM11.88 8.56h8.86v2.06h-8.86V8.56zm10.98 9.18h-1.05v-2.1h-1.06v7.96H16.4c-1.58 0-.82-3.74-.82-3.74s-3.65.89-3.69-.78v-3.43h-1.06v2.06H9.77v-3.58h13.09v3.61zm.75-4.91c-.4 0-.72-.32-.72-.72s.32-.72.72-.72c.4 0 .72.32.72.72s-.32.72-.72.72zm-4.12 2.96h-6.1v1.06h6.1v-1.06zm-6.11 3.15h6.1v-1.06h-6.1v1.06z"></path>
+                        </g>
+                    </svg>
+                  </a>
+              </div>
+              <div id='tag-date-container'>              
+                <p id='article-tag'>SPACE</p>
+                <span id='article-date'>6 August 2021</span>
+              </div>
+              <p id='author'>By <span>Leah Crane</span></p>
+
+            </header>
+            <figure>
+              <!--img and img caption-->
+              <img id='article-img' src="/images/article-img.jpeg" />
+              <figcaption id='caption-1'>
+                The rocks inside Gale crater hint there may not have been a large lake
+                there after all
+              </figcaption>
+              <figcaption id='caption-2'>NASA/JPL-Caltech/University of Arizona</figcaption>
+            </figure>
+            <p>
+              A purported ancient lake on Mars may have been far smaller than
+              researchers thought. NASA’s Curiosity rover has been
+              <a>exploring Gale crater</a> for more than eight years, and while early observations suggested the entire crater may once have been filled with water, a new analysis implies that it just had a series of ponds instead. 
+            </p>
+            <br>
+            <p>
+              Previous analyses of data from Curiosity have relied heavily on
+              a measure called the chemical index of alteration to determine how rocks were weathered over time. <a>Joseph Michalski</a> at the University of Hong Kong and his colleagues have suggested that because this measure was developed for use on Earth, it may not be valid in the extreme Martian climate.
+            </p> 
+            <br>
+            <p>
+              Instead, they analysed the concentrations of various compounds
+              that are expected to change based on different types of weathering over time. They found that some of the layers of rock Curiosity examined did interact with water at some point in their past, but more are likely to have formed outside of the water.
+            </p>
+            <br>
+            </p>
+            <div id="read-more-link-container">
+                <p>Read more: <span>Microbes burping methane on Mars may be right next to Nasa rover</span></p>
+            </div>
+            <br>
+            <p>
+              “Over hundreds of metres of strata, it seems that the only layers that
+              are demonstrably lacustrine [formed in a lake] are the lower few
+              metres,” says Michalski. “Of the rocks visited by the rover… the
+              fraction that is demonstrably lacustrine is something like 1 per cent.”
+            </p>
+            <br>
+            <p>
+            These rocks were mostly in the lowest few metres of
+            <a>sediments in the crater</a>, suggesting the lake was not nearly as deep or extensive as we thought. “There was likely a small lake or more likely a series of small lakes in the floor of Gale crater, but these were shallow ponds,” says Michalski. 
+            </p>
+            <br>
+            <p>
+              The rocks that didn’t form in water appeared to be volcanic, so Michalski says that they may have formed out of ash from volcanic eruptions after the water in Gale crater had dried up. Observations by other Mars missions have hinted that these sediments were deposited by wind, not water, so this may solve that mismatch.
+            </p>
+            <img id='article-ad' src='images/ad.jpeg'/>
+            <footer id='article-footer'>
+                <p id='journal-ref'>Journal reference: <span>Science Advances,</span> <a>DOI: 10.1126/sciadv.abh2687</a></p>
+                <p id='article-footer-cta'>Sign up to our free <a>Launchpad</a> newsletter for a voyage across the galaxy and beyond, every Friday</p>
+                <div id='article-footer-links'>
+                    <p>More on these topics:</p>
+                    <ul>
+                        <li><a class='article-footer-link'>PLANETS</a></li>
+                        <li><a>MARS</a></li>
+                    </ul>
+                </div>
+            </footer>
+            <div id='sponsor-content'>
+                <h1 id='sponsor-header'> SPONSORED CONTENT </h1>
+                <div id='sponsor-content-bottom'>
+                    <img id='sponsor-img' src='images/sponser.jpeg'/>
+                    <div id='sponsor-content-text'>
+                        <h1>Information and the future of defence</h1>
+                        <br>
+                        <h2>&#169 IPSEN 2019 / ADAM WISEMAN / CAPA PICTURES Science and medicine are popular career choices that the the UK government...</h2>
+                        <br>
+                        <h2>Sponsored by <a>IPSEN</a></h2>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <div id='right-container'>
+            <!--Float right / ad / top article (buttons) / :after w/ content: counter-->
+            <div id='ad-1'>
+                <img src='/images/side-ad.jpeg'/>'
+            </div>
+            <div id='trend-topic-container'>
+                <nav>
+                    <ul>
+                        <li><a id='trending-btn' class='trending-btn'>TRENDING</a></li>
+                        <li><a class='trending-btn'>LATEST</a></li>
+                        <li><a class='trending-btn'>VIDEO</a></li>
+                        <li><a class='trending-btn'>FREE</a></li>
+                    </ul>
+                </nav>
+                <div class='trend-topic'>
+                    <h1>How Minecraft is helping children with autism make new friends</h1>
+                    <h2>1</h2>
+                </div>
+                <div class='trend-topic'>
+                    <h1>Covid-19 vaccines: Everything you need to know about the leading shots</h1>
+                    <h2>2</h2>
+                </div>
+                <div class='trend-topic'>
+                    <h1>Sicily hits 48.8˚C the highest temperature ever recored in Europe</h1>
+                    <h2>3</h2>
+                </div>
+                <div class='trend-topic'>
+                    <h1>What to do when sharing a golf course with a crocodile</h1>
+                    <h2>4</h2>
+                </div>
+                <div class='trend-topic'>
+                    <h1>Insect-killing plant found by Australian highway is new to science</h1>
+                    <h2>5</h2>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id='social-link-ad-section'>
+        <div id='article-social-links'>
+            <a>
+                <img src='/images/facebook-icon.svg'/>
+            </a>
+            <a>
+                <img src='/images/twitter-icon.svg'/>
+            </a>
+            <a>
+                <img src='/images/whats-app-icon.svg'/>
+            </a>
+            <a>
+                <img src='/images/linkedin-icon.svg'/>
+            </a>
+            <a>
+                <img src='/images/reddit-icon.svg'/>
+            </a>
+            <a class='social-links'>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" style="fill: rgb(255, 255, 255);" width='28px' height='28px' background-color='#999'>
+                  <g>
+                      <g fill-rule="evenodd"></g>
+                      <path d="M27 22.757c0 1.24-.988 2.243-2.19 2.243H7.19C5.98 25 5 23.994 5 22.757V13.67c0-.556.39-.773.855-.496l8.78 5.238c.782.467 1.95.467 2.73 0l8.78-5.238c.472-.28.855-.063.855.495v9.087z"></path><path d="M27 9.243C27 8.006 26.02 7 24.81 7H7.19C5.988 7 5 8.004 5 9.243v.465c0 .554.385 1.232.857 1.514l9.61 5.733c.267.16.8.16 1.067 0l9.61-5.733c.473-.283.856-.96.856-1.514v-.465z"></path>
+                  </g>
+              </svg>
+            </a>
+            <a class='social-links'>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" role="img" style="fill: rgb(255, 255, 255);">
+                  <g>
+                      <path d="M24.67 10.62h-2.86V7.49H10.82v3.12H7.95c-.5 0-.9.4-.9.9v7.66h3.77v1.31L15 24.66h6.81v-5.44h3.77v-7.7c-.01-.5-.41-.9-.91-.9zM11.88 8.56h8.86v2.06h-8.86V8.56zm10.98 9.18h-1.05v-2.1h-1.06v7.96H16.4c-1.58 0-.82-3.74-.82-3.74s-3.65.89-3.69-.78v-3.43h-1.06v2.06H9.77v-3.58h13.09v3.61zm.75-4.91c-.4 0-.72-.32-.72-.72s.32-.72.72-.72c.4 0 .72.32.72.72s-.32.72-.72.72zm-4.12 2.96h-6.1v1.06h6.1v-1.06zm-6.11 3.15h6.1v-1.06h-6.1v1.06z"></path>
+                  </g>
+              </svg>
+            </a>
+        </div>
+        <div id='promotion-container'>
+            <a><img id='mag-img' src='images/mag.jpeg'></a>
+            <div id='social-link-ad-btns'>
+                <button id='promo-subscribe-btn'>SUBSCRIBE</button>
+                <button id='promo-view-btn'>VIEW IN THE APP</button>
+                <button id='promo-buy-btn'>BUY IN PRINT</button>
+            </div>
+            <img id='ad-2' src='images/ad-2.jpeg'>
+        </div>
+    </section>
+    <section id='more-from-scientist-section'>
+        <header>
+            <h1 id='more-from-scientist-section-title'>MORE FROM NEW SCIENTIST</h1>
+        </header>
+        <div id='card-container'>
+            <a class='card'>
+                <img src='images/card-1.jpeg'>
+                <p id='card-tag-1' class='card-tag'>SPACE</p>
+                <h1 class='card-desc'>Mercury has almost no boulders on its surface and we're not sure why</h1>
+            </a>
+            <a class='card'>
+                <img src='images/card-2.jpeg'>
+                <p id='card-tag-2' class='card-tag'>HUMANS</p>
+                <h1 class='card-desc'>I'm Your Man review: How to fall in love with a robot - maybe</h1>
+            </a>
+            <a class='card'>
+                <img src='images/card-3.jpeg'>
+                <p id='card-tag-3' class='card-tag'>HUMANS</p>
+                <h1 class='card-desc'>How astronomer Vera Rubin shone light on dark matter and fought sexism</h1>
+            </a>
+            <a class='card'>
+                <img src='images/card-4.jpeg'>
+                <p id='card-tag-4' class='card-tag'>PHYSICS</p>
+                <h1 class='card-desc'>States of matter: The unthinkable forms beyond solid, liquid and gas</h1>
+            </a>
+        </div>
+    </section>
+    <section id='promoted-stories-section'>
+        <header>
+            <h1 id='promoted-stories-title'>Promoted Stories</h1>
+        </header>
+        <div id='promoted-card-container'>
+            <a class='promoted-card'>
+                <img src='images/mac.webp'>
+                <h1 class='promoted-card-desc'>1 in 2 Mac Users are Unaware Of This Mac Trick</h1>
+                <p>MacKeeper</p>
+            </a>
+            <a class='promoted-card'>
+                <img src='images/wallet.webp'>
+                <h1 class='promoted-card-desc'>2021's best credit cards, backed by hours of research</h1>
+                <p>Nerd Wallet</p>
+            </a>
+            <a class='promoted-card'>
+                <img src='images/health.webp'>
+                <h1 class='promoted-card-desc'>Keep Your Prostate Great: Do This Daily</h1>
+                <p>Health Headlines 360</p>
+            </a>
+            <a class='promoted-card'>
+                <img src='images/jungle.jpeg'>
+                <h1 class='promoted-card-desc'>Jungle Cruise on Disney+ </h1>
+                <p>Disney +</p>
+            </a>
+        </div>
+    </section>
+    <footer id='site-footer'>
+        <div id='footer-newsletter'>
+            <h1 id='footer-newsletter-title'>Sign up to our newsletters</h1>
+            <form id='footer-form'>
+                <label id='footer-form-label'>Enter your email address to get started</label>
+                <input id='footer-form-input' placeholder='Your email'>
+                <button id='footer-form-button'> SIGN UP</button>
+            </form>
+            <nav id='footer-nav-1'>
+                <ul>
+                    <li>Contact Us</li> | 
+                    <li>Help</li> | 
+                    <li>About Us</li> | 
+                    <li>Privacy Policy</li> | 
+                    <li>Cookie Policy</li> | 
+                    <li>Terms & Conditions</li>
+                </ul>
+            </nav>
+        <div id='site-footer-bottom-section'>
+            <nav id='footer-nav-2'>
+                <ul>
+                    <li>Advertise</li> | 
+                    <li>Write for us</li> | 
+                    <li>Events</li> | 
+                    <li>Science jobs</li> | 
+                    <li>Syndication</li> | 
+                    <li>RSS feeds</li>
+                </ul>
+            </nav>
+            <nav id='footer-nav-3'>
+                <ul>
+                    <li>Gift subscriptions</li> | 
+                    <li>Student subscriptions</li> | 
+                    <li>Educational subscriptions</li> | 
+                    <li>Corporate subscriptions</li>
+                </ul>
+            </nav>
+            <div id='footer-btn-container'>
+                <button id='do-not-sell-btn'> DO NOT SELL MY PERSONAL INFORMATION</button>
+            </div>
+            <div id='footer-social'>
+                <div id='get-app-container'>
+                    <h1>GET THE APP</h1>
+                    <div id='app-link-container'>
+                        <a><img id='app-store-img' src='images/app-store.jpg'>'</a>
+                        <a><img id='google-play-img' src='images/google-play.jpg'>'</a>
+                    </div>
+                </div>
+                <div id='follow-us-container'>
+                    <h1>FOLLOW US</h1>
+                    <div id='article-social-links'>
+                        <a>
+                            <img src='/images/facebook-icon.svg'/>
+                        </a>
+                        <a>
+                            <img src='/images/twitter-icon.svg'/>
+                        </a>
+                        <a>
+                            <img src='/images/linkedin-icon.svg'/>
+                        </a>
+                        <a>
+                            <img src='/images/pinterest.svg'/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id='footer-end'>
+                <div id='copyright-info'>
+                    <p>&#169 Copyright New Scientist Ltd.</p>
+                </div>
+                <div id='back-to-top-cta'>
+                    <a>Back to top</a>
+                    <img src='images/up.svg'/>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </footer>
+  </body>
+</html>
